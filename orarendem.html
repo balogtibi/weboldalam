@@ -6,24 +6,38 @@
     <title>Órarendem</title>
     
     <style>
-    table {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    vertical-align: middle;
-    border-collapse: collapse;
-    }
-    th, td {
-    height: 50px;
-    border-style:solid;
-    border-color: blue;
-    }
+        table {
+            width: 75%;
+            margin: 20px auto;
+            text-align: center;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        th, td {
+            height: 50px;
+            border: 1px solid blue;
+            padding: 10px;
+        }
+        th {
+            background-color: lightblue;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
     </style>
-    
 </head>
-<body style="background-color: lightgray;">
-    
+<body>
     <nav>
         <a href="index.html">FŐOLDAL</a>
         <a href="keplink.html">KÉPLINK</a>
@@ -32,9 +46,9 @@
         <a href="urlap.html">ŰRLAP</a>
     </nav>
 
-    <h2>Órarendem;</h2>
+    <h2 style="text-align: center;">Órarendem</h2>
 
-    <table border="1">
+    <table>
         <tr>
             <th>Óra</th>
             <th>Idő</th>
@@ -46,86 +60,78 @@
         </tr>
         <tr>
             <th>0.</th>
-            <th>7:15-8:00</th>
-            <td>Matek</td>
-            <td>Irodalom</td>
+            <td>7:15 - 8:00</td>
+            <td rowspan="2">Matematika</td>
+            <td>Magyar irodalom</td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <th>1.</th>
-            <th>8:00-8:45</th>
-            <td>Matek</td>
-            <td>Matek</td>
-            <td>Töri</td>
-            <td>Digitális Kultúra</td>
-            <td>Angol</td>
+            <td>8:00 - 8:45</td>
+            <td>Matematika</td>
+            <td>Történelem</td>
+            <td rowspan="2">Digitális kultúra</td>
+            <td>Angol nyelv</td>
         </tr>
         <tr>
             <th>2.</th>
-            <th>8:55-9:40</th>
-            <td>Angol</td>
-            <td>Info és Távközlés</td>
-            <td>Angol</td>
-            <td>Digitális Kultúra</td>
-            <td>Töri</td>
+            <td>8:55 - 9:40</td>
+            <td>Angol nyelv</td>
+            <td rowspan="3">Informatikai és távközlési alapok</td>
+            <td>Angol nyelv</td>
+            <td>Történelem</td>
         </tr>
         <tr>
             <th>3.</th>
-            <th>9:50-10:35</th>
-            <td>Töri</td>
-            <td>Info és Távközlés</td>
-            <td>Tesi</td>
-            <td>Angol</td>
-            <td>Komplex</td>
+            <td>9:50 - 10:35</td>
+            <td>Történelem</td>
+            <td>Testnevelés</td>
+            <td>Angol nyelv</td>
+            <td>Komplex természettudomány</td>
         </tr>
         <tr>
             <th>4.</th>
-            <th>10:45-11:30</th>
-            <td>Irodalom</td>
-            <td>Infó és Távközlés</td>
-            <td>IKT</td>
-            <td>Nyelvtan</td>
-            <td>Munkavállalói Ismeretek</td>
+            <td>10:45 - 11:30</td>
+            <td>Magyar irodalom</td>
+            <td>Magyar irodalom</td>
+            <td>IKT projektmunka</td>
+            <td>Magyar nyelv</td>
+            <td>Munkavállalói ismeretek</td>
         </tr>
         <tr>
             <th>5.</th>
-            <th>11:40-12:25</th>
-            <td></td>
-            <td>Angol</td>
-            <td>Komplex</td>
-            <td>Tesi</td>
-            <td>Irodalom</td>
+            <td>11:40 - 12:25</td>
+            <td>Angol nyelv</td>
+            <td>Angol nyelv</td>
+            <td>Komplex természettudomány</td>
+            <td>Testnevelés</td>
+            <td>Magyar irodalom</td>
         </tr>
         <tr>
             <th>6.</th>
-            <th>12:45-13:30</th>
-            <td></td>
-            <td>Programozási Alapok</td>
-            <td>Matek</td>
-            <td>Osztályfönőki</td>
-            <td>Nyelvtan</td>
+            <td>12:45 - 13:30</td>
+            <td>Programozási alapok</td>
+            <td rowspan="2">Programozási alapok</td>
+            <td>Matematika</td>
+            <td>Osztályfőnöki</td>
+            <td>Magyar nyelv</td>
         </tr>
         <tr>
             <th>7.</th>
-            <th>13:35-14:20</th>
+            <td>13:35 - 14:20</td>
             <td></td>
-            <td>Programozási Alapok</td>
-            <td></td>
-            <td>Komplex</td>
-            <td>Tesi</td>
+            <td>Komplex természettudomány</td>
+            <td rowspan="2">Testnevelés</td>
         </tr>
         <tr>
             <th>8.</th>
-            <th>14:25-15:10</th>
+            <td>14:25 - 15:10</td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td>Tesi</td>
         </tr>
-       </table>
-
+    </table>
 </body>
 </html>
